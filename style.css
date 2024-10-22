@@ -1,0 +1,229 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --azul-claro: #167BF7;
+    --azul-escuro: #0A1E40;
+    --cor-de-fundo: #F4F4F9;
+    --fonte-principal: 'Roboto', sans-serif;
+    --botao-efeito: #145DC1;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--azul-escuro);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--azul-escuro);
+    padding: 1em 0;
+    color: var(--branco-principal);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    width: 150px;
+}
+
+.nav__menu {
+    list-style: none;
+    display: flex;
+}
+
+.nav__link {
+    margin: 0 1em;
+    text-decoration: none;
+    color: var(--branco-principal);
+    font-weight: 700;
+}
+
+.nav__link:hover {
+    color: var(--azul-claro);
+}
+
+.nav__btn {
+    background-color: var(--azul-claro);
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    color: var(--branco-principal);
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.nav__btn:hover {
+    background-color: var(--botao-efeito);
+}
+
+.banner {
+    background-image: url("img/banner-background.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 5em 0;
+    color: var(--branco-principal);
+    text-align: center;
+}
+
+.banner__content h1 {
+    font-size: 48px;
+    margin-bottom: 0.5em;
+}
+
+.banner__content p {
+    font-size: 18px;
+    margin-bottom: 1.5em;
+}
+
+.banner__btn {
+    background-color: var(--azul-claro);
+    padding: 0.8em 2em;
+    border: none;
+    border-radius: 5px;
+    color: var(--branco-principal);
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.banner__btn:hover {
+    background-color: var(--botao-efeito);
+}
+
+.planos {
+    padding: 5em 0;
+    background-color: var(--cor-de-fundo);
+    text-align: center;
+}
+
+.planos h2 {
+    font-size: 36px;
+    margin-bottom: 2em;
+}
+
+.planos__cards {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.card {
+    background-color: var(--branco-principal);
+    border-radius: 10px;
+    padding: 2em;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 1em;
+}
+
+.card__preco {
+    font-size: 22px;
+    margin: 1em 0;
+    font-weight: 700;
+    color: var(--azul-claro);
+}
+
+.card__btn {
+    background-color: var(--azul-claro);
+    padding: 0.7em 1.5em;
+    border: none;
+    border-radius: 5px;
+    color: var(--branco-principal);
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.card__btn:hover {
+    background-color: var(--botao-efeito);
+}
+
+.dispositivos {
+    background-color: var(--azul-escuro);
+    color: var(--branco-principal);
+    padding: 5em 0;
+}
+
+.dispositivos__titulo {
+    font-size: 36px;
+    margin-bottom: 2em;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    list-style: none;
+}
+
+.dispositivos__lista img {
+    width: 50px;
+    height: 50px;
+}
+
+.ajuda {
+    padding: 5em 0;
+    text-align: center;
+    background-color: var(--cor-de-fundo);
+}
+
+.ajuda__btn {
+    background-color: var(--azul-claro);
+    padding: 0.7em 1.5em;
+    border: none;
+    border-radius: 5px;
+    color: var(--branco-principal);
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.ajuda__btn:hover {
+    background-color: var(--botao-efeito);
+}
+
+.footer {
+    background-color: var(--azul-escuro);
+    padding: 3em 0;
+    color: var(--cinza-secundario);
+    text-align: center;
+}
+
+.footer__links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 1.5em;
+}
+
+.footer__links li {
+    margin: 0 1em;
+}
+
+.footer__links a {
+    text-decoration: none;
+    color: var(--cinza-secundario);
+    font-weight: 700;
+}
+
+.footer__links a:hover {
+    color: var(--branco-principal);
+}
